@@ -1,0 +1,710 @@
+@import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+.main{
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	overflow: hidden;
+	background: linear-gradient(to right, #ff9999, #ff4d94);
+}
+
+.nav{
+	width: 80%;
+	position: sticky;
+	margin: 20px auto;
+	z-index: 1;
+	display: flex;
+	align-items: center;
+}
+
+.logo img{
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	bottom: 5px;
+	right: 5%;
+}
+
+.logo p{
+	position: absolute;
+	bottom: 2%;
+	right: 5%;
+}
+
+.nav-links{
+	position: absolute;
+	right: 25px;
+	top: 10%;
+	flex: 1;
+	text-align: right;
+}
+
+.nav-links ul li{
+	list-style: none;
+	display: inline-block;
+	margin: 0 20px;
+}
+
+.nav-links ul li a{
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.information{
+	width: 1000px;
+	height: 1000px;
+	position: absolute;
+	top: 50%;
+	left: -10%;
+	transform: translateY(-50%);
+}
+
+#circle{
+	width: 1000px;
+	height: 1000px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 50%;
+	transform: rotate(0deg);
+	transition: 1s;
+}
+
+.lips{
+	position: absolute;
+	top: 100px;
+	left: 300px;
+	display: flex;
+	color: #000000;
+	transform: rotate(-90deg);
+}
+
+.lips div{
+	margin-left: 30px;
+}
+
+.lips div p{
+	margin-top: 8px;
+}
+
+.lips img{
+	width: 100px;
+}
+
+.makeUp{
+	position: absolute;
+	top: 450px;
+	right: 100px;
+	display: flex;
+	color: #000000;
+}
+
+.makeUp div{
+	margin-left: 30px;
+}
+
+.makeUp div p{
+	margin-top: 8px;
+}
+
+.makeUp img{
+	width: 100px;
+}
+
+.perfume{
+	position: absolute;
+	bottom: 150px;
+	left: 400px;
+	display: flex;
+	color: #000000;
+	transform: rotate(-270deg);
+}
+
+.perfume div{
+	margin-left: 30px;
+}
+
+.perfume div p{
+	margin-top: 8px;
+	
+}
+
+.perfume img{
+	width: 100px;
+}
+
+.clothes{
+	position: absolute;
+	top: 450px;
+	left: 100px;
+	display: flex;
+	color: #000000;
+	transform: rotate(-180deg);
+}
+
+.clothes div{
+	margin-left: 30px;
+}
+
+.clothes div p{
+	margin-top: 8px;
+}
+
+.clothes img{
+	width: 100px;
+}
+
+.info-template{
+	width: 300px;
+	position: absolute;
+	top: 50%;
+	left: 35%;
+	transform: translateY(-50%);
+	z-index: 1;
+}
+
+.controls{
+	position: absolute;
+	right: 250px;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: center;
+}
+
+.controls h3{
+	margin: 15px 0;
+	color: #000000;
+}
+
+#upBtn{
+	width: 15px;
+	cursor: pointer;
+}
+
+#downBtn{
+	width: 15px;
+	cursor: pointer;
+}
+
+.overlay{
+	width: 0;
+	height: 0;
+	border-top: 500px solid #000000;
+	border-right: 500px solid transparent;
+	border-bottom: 500px solid #000000;
+	border-left: 500px solid #000000;
+	position: absolute;
+	left: 0;
+	top: 0;
+	
+}
+
+/*Home Page*/
+/*Landing page 1*/
+.landing_page1{
+	height: 100vh;
+}
+
+.landing_page1{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: space-between;
+	padding: 100px;
+	box-sizing: border-box;
+	background: url(Images/restaurant_page.jpg);
+	background-blend-mode: screen;
+	background-position: Ecenter;
+	background-clip: border-box;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.welcome_content1{
+	width: 100%;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	padding: 0;
+}
+
+.welcome_content1 h1{
+	position: absolute;
+	top: 30%;
+	left: 30%;
+	font-size: 80px;
+	color: #000000;
+	text-align: center;
+	margin: 0;
+	font-family: 'Hachi Maru Pop', sans-serif;
+}
+
+.welcome_content1 p{
+	position: absolute;
+	top: 40%;
+	left: 500px;
+	text-align: center;
+	color: black;
+	padding: 75px;
+	font-family: 'Hachi Maru Pop', sans-serif;
+}
+
+.welcome_content1 h2{
+	position: absolute;
+	bottom: 38%;
+	left: 30%;
+	font-size: 20px;
+	color: #000000;
+	text-align: center;
+	margin: 0;
+	font-family: 'Hachi Maru Pop', sans-serif;
+}
+
+.welcome_content1 a{
+	font-family: 'Hachi Maru Pop', sans-serif;
+	font-size: 20px;
+	text-align: center;
+	color: #009933;
+	text-decoration: none;
+}
+
+/*Landing page 2*/
+.landing_page2{
+	height: 100vh;
+}
+
+.landing_page2{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: space-between;
+	padding: 100px;
+	box-sizing: border-box;
+	background: url(Images/parlor.jpg);
+	background-blend-mode: screen;
+	background-position: Ecenter;
+	background-clip: border-box;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.welcome_content2{
+	width: 100%;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	padding: 0;
+}
+
+.welcome_content2 h1{
+	position: absolute;
+	top: 30%;
+	left: 30%;
+	font-size: 80px;
+	color: #000000;
+	text-align: center;
+	margin: 0;
+	font-family: 'Hachi Maru Pop', sans-serif;
+}
+
+.welcome_content2 p{
+	position: absolute;
+	top: 40%;
+	left: 400px;
+	text-align: center;
+	color: black;
+	padding: 75px;
+	font-family: 'Hachi Maru Pop', sans-serif;
+}
+
+.welcome_content2 h2{
+	position: absolute;
+	bottom: 38%;
+	left: 30%;
+	font-size: 20px;
+	color: #000000;
+	text-align: center;
+	margin: 0;
+	font-family: 'Hachi Maru Pop', sans-serif;
+}
+
+.welcome_content2 a{
+	font-family: 'Hachi Maru Pop', sans-serif;
+	font-size: 20px;
+	text-align: center;
+	color: #009933;
+	text-decoration: none;
+}
+
+/*Resto Page*/
+.Resto-page{
+	height: 100vh;
+}
+
+.Resto-page{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: space-between;
+	padding: 100px;
+	box-sizing: border-box;
+	background: url(Images/resto.jpg);
+	background-blend-mode: screen;
+	background-position: Ecenter;
+	background-clip: border-box;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.Resto-content{
+	width: 100%;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	padding: 0;
+}
+
+.Resto-content h1{
+	font-size: 150px;
+	color: #000000;
+	text-align: center;
+	margin: 0;
+	font-family: 'Noto Sans JP', sans-serif;
+}
+
+.Resto-content p{
+	text-align: center;
+	color: #000000;
+	padding: 75px;
+}
+
+.menu_page {
+    padding: 40px;
+	background: #292727;
+    align-content: center;
+    font-family: sans-serif;
+    color: #FFFFFF;
+}
+
+.menu_section {
+    text-align: center;
+}
+
+.menu_section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu_section h3 {
+    font-family: 'Petit Formal Script', cursive;
+}
+
+.menu_section li {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.reservation_form {
+	height: 100vh;
+	background: #559890;
+}
+
+.reservation_form {
+	min-height: 100vh;
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Images/banner-img.jpg") center/cover no-repeat;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	padding-bottom: 20px;
+}
+
+.card-container {
+	display: grid;
+	grid-template-columns: 420px 420px;
+}
+
+.card-img {
+	background: url("Images/card-img.jpg") center/cover no-repeat;
+}
+
+.card-content {
+	background: #fff;
+	height: 330px;
+}
+
+.card-content h3 {
+	text-align: center;
+	color: #000;
+	padding: 25px 0 10px 0;
+	font-size: 26px;
+	font-weight: 500;
+}
+
+.form-row {
+	display: flex;
+	width: 90%;
+	margin: 0 auto;
+}
+
+form select,
+form input {
+	display: block;
+	width: 100%;
+	margin: 15px 12px;
+	padding: 5px;
+	font-size: 15px;
+	font-family: 'Poppins', sans-serif;
+	outline: none;
+	border: none;
+	border-bottom: 1px solid #eee;
+	font-weight: 300;
+}
+
+form input[type=text],
+form input[type=number],
+form input::placeholder,
+select {
+	color: #9a9a9a;
+}
+
+form input[type=submit] {
+	color: #fff;
+	background: #f2745f;
+	padding: 12px 0;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+form input[type=submit]:hover {
+	opacity: 0.9;
+}
+
+@media(max-width: 992px) {
+	.card-container {
+		grid-template-columns: 100%;
+		width: 100vw;
+	}
+	.card-img {
+		height: 330px;
+	}
+}
+
+/*Parlor Page*/
+.Parlor-page{
+	height: 100vh;
+}
+
+.Parlor-page{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: space-between;
+	padding: 100px;
+	box-sizing: border-box;
+	background: url(Images/makeup.jpg);
+	background-blend-mode: screen;
+	background-position: Ecenter;
+	background-clip: border-box;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.Parlor-content{
+	width: 100%;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	padding: 0;
+}
+
+.Parlor-content h1{
+	position: absolute;
+	top: 400px;
+	left: 50px;
+	font-size: 100px;
+	color: #000000;
+	text-align: center;
+	margin: 0;
+	font-family: 'Pacifico', sans-serif;
+}
+
+.Parlor-content p{
+	position: absolute;
+	bottom: -50px;
+	left: -35px;
+	text-align: center;
+	color: #000000;
+	padding: 75px;
+}
+
+.guide{
+	padding: 40px;
+	background: #292727;
+    align-content: center;
+    font-family: sans-serif;
+    color: #ffffff;
+}
+
+.guide h1{
+	margin: 40px;
+    color: #ffffff;
+}
+
+.guide p{
+	margin: 40px;
+    color: #ffffff;
+}
+
+/*Brands Page*/
+.Brands-body{
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #ffb3b3;
+}
+
+.Brands-body h1{
+	position: absolute;
+	bottom: 20px;
+	left: 30%;
+	font-family: 'Noto Sans JP', sans-serif;
+	font-size: 40px;
+}
+
+
+.slider{
+	width: 800px;
+	height: 500px;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.slides{
+	width: 500%;
+	height: 500px;
+	display: flex;
+}
+
+.slides input{
+	display: none;
+}
+
+.slide{
+	width: 20%;
+	transition: 2s;
+}
+
+.slide img{
+	width: 800px;
+	height: 500px;
+}
+
+.navigationManual{
+	position: absolute;
+	width: 800px;
+	margin-top: -40px;
+	display: flex;
+	justify-content: center;
+}
+
+.manualBtn{
+	border: 2px solid #40d3dc;
+	padding: 5px;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: 1s;
+}
+
+.manualBtn:not(:last-child){
+	margin-right: 40px;
+}
+
+.manualBtn:hover{
+	background: #40d3dc;
+}
+
+#radio1:checked ~ .first{
+	margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+	margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+	margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+	margin-left: -60%;
+}
+
+#radio5:checked ~ .first{
+	margin-left: -80%;
+}
+
+/*Contact Page*/
+.container input[type=text],
+.container select,
+.container textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+}
+
+.container input[type=submit] {
+	background-color: #4CAF50;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	cursor: pointer;
+}
+
+.container input[type=submit]:hover {
+	background-color: #45a049;
+}
+
+.container {
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.column {
+	float: left;
+	width: 50%;
+	margin-top: 6px;
+	padding: 20px;
+}
+
+.row {
+	display: flex;
+	justify-content: space-between;
+}
+
+@media screen and (max-width: 600px) {
+	.column,
+	input[type=submit] {
+		width: 100%;
+		margin-top: 0;
+	}
+}
